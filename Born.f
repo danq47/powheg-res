@@ -105,7 +105,7 @@ c a (leading) color structure to an event.
       logical samecol,conjcol
 c We should reach the madgraph flavour configuration that
 c was actually computed, in case smartsig is on
-      iborn = rad_ubornidx
+      iborn = ibornsubp
       bflav0 = flst_born(:,iborn)
       do while(equivto(iborn).ne.-1)
          iborn=equivto(iborn)
