@@ -8,7 +8,7 @@ PDF=lhapdf
 ## ANALYSIS: none, BnJ, HnJ, alt, NNLOPS
 ##           the first 4 analyses require the FASTJET package, that has to be 
 ##           installed separately (see below)
-ANALYSIS=NZ
+ANALYSIS=none
 ## For static linking uncomment the following
 #STATIC= -static
 #
@@ -272,7 +272,7 @@ veryclean:
 	cd $(OBJ) ; \rm *
 
 # Dependencies of SVN version stamp code
-pwhg_main.o: svn.version-main
+pwhg_main.o: svn.version
 lhefwrite.o: svn.version
 
 ifeq ("$(COMPILER)","gfortran")

@@ -11,3 +11,9 @@ c -*- Fortran -*-
 
       integer maxalr
       parameter (maxalr=maxprocreal*nlegreal*(nlegreal-1)/2)
+
+c DQ - mod start 25/10/12
+c Added in maxreshists from RES/b_bbar_4l
+      integer maxreshists
+      parameter (maxreshists=500)
+c DQ - mod end
