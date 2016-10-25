@@ -10,6 +10,7 @@ c and set the event-by-event couplings constant
       include 'pwhg_math.h'
       include 'pwhg_st.h'
       include 'PhysPars.h'
+      include 'pwhg_rad.h'
       integer iborn
       real * 8 p(0:3,nlegborn),bornjk(nlegborn,nlegborn)
       integer bflav(nlegborn)
@@ -105,7 +106,7 @@ c a (leading) color structure to an event.
       logical samecol,conjcol
 c We should reach the madgraph flavour configuration that
 c was actually computed, in case smartsig is on
-      iborn = ibornsubp
+      iborn = rad_ubornsubp
       bflav0 = flst_born(:,iborn)
       do while(equivto(iborn).ne.-1)
          iborn=equivto(iborn)

@@ -74,7 +74,7 @@ c explicit request not to include them
       endif
       do i=3,nlegreal
          if (abs(flst_real(i,1)).le.st_nlight) then
-            flst_lightpart=i
+c            flst_lightpart=i
             exit
          endif
       enddo
