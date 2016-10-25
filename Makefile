@@ -195,7 +195,7 @@ PWHG=pwhg_main.o pwhg_init.o bbinit.o btilde.o lhefwrite.o		\
 	pwhg_analysis_driver.o checkmomzero.o		\
 	setstrongcoupl.o integrator.o newunit.o mwarn.o sigsoftvirt.o	\
 	reshufflemoms.o setlocalscales.o bmass_in_minlo.o validflav.o \
-        mint_upb.o minlo_checks.o pwhgreweight.o opencount.o \
+        mint_upb.o minlo_checks.o opencount.o \
         ubprojections.o sigcollsoft.o sigvirtual.o \
         Born_tm.o  bornmatrix_tm.o  init_couplings-topmass.o nloutils.o   \
         ew.o EWgint.o decay-util.o HPL_full.o \
@@ -272,7 +272,7 @@ veryclean:
 	cd $(OBJ) ; \rm *
 
 # Dependencies of SVN version stamp code
-pwhg_main.o: svn.version
+pwhg_main.o: svn.version-main
 lhefwrite.o: svn.version
 
 ifeq ("$(COMPILER)","gfortran")
